@@ -1,0 +1,49 @@
+:root {    /* defino las variables que quiero. luego las llamo con var */
+    --fuentePrinicipal: 'Staatliches',cursive;
+    --primario: #9c27b0;
+    --primarioOscuro: #89119d;
+    --secundario: #ffce00;
+}
+html {
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primario);
+    font-size: 20px;
+    line-height: 2;
+}
+.header {
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+}
+.barra {
+    background-color: var(--primarioOscuro);
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+
+}
+.barra .nav { 
+    display: grid;
+    grid-template-columns: 200px 200px;  /* divide el grid en 2 de 200px */
+    grid-column-gap: 10px;   /* coloca 10px entre las columnas */
+    justify-content: center;
+}
+.barra .nav a {
+    font-family: var(--fuentePrinicipal);
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+} 
+.barra .nav a:hover {
+    color: var(--secundario);
+}
